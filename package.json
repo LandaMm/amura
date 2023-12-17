@@ -1,0 +1,25 @@
+{
+  "name": "amura",
+  "displayName": "Amura",
+  "description": "Amura programming language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "amura",
+      "aliases": ["Amura", "amura"],
+      "extensions": [".amr",".amura"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "amura",
+      "scopeName": "source.amr",
+      "path": "./syntaxes/amura.tmLanguage.json"
+    }]
+  }
+}
